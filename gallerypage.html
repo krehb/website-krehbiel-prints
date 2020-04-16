@@ -8,7 +8,7 @@
 		<meta name="author" content="James Krehbiel">
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <script src="app.js"></script>
 		
 	</head>
 <body>
@@ -25,8 +25,8 @@
 		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 		  <div class="navbar-nav">
 			<a class="nav-item nav-link active" href="./Albert Krehbiel Prints.html">The Artist<span class="sr-only">(current)</span></a>
-			<a class="nav-item nav-link" href="gallerypage.html">Gallery</a>
-			<a class="nav-item nav-link" href="#">Shopping-Cart</a>
+			<a class="nav-item nav-link" href="gallerypage.html">Prints-Gallery</a>
+			<a class="nav-item nav-link" href="shopping.html">Shopping-Cart</a>
 		  </div>
 		</div>
 	  </nav>
@@ -36,15 +36,16 @@
 	<div class="container">
 		<div class="col-12">
 			<div id="gallery">
+        <h1 id="gallery-header">High Quality Reproductions</h1>
                 <div class="row">
                    <div class="col-6">
                         <div class="text-center">
-                            <img src="./images/theme/Fisherman's Warehouse.jpg" id="img-selected" alt="..." class="img-thumbnail">
+                            <img src="./images/theme/And The Band Played On.jpg" id="img-selected" alt="..." class="img-thumbnail">
                         </div>
                    </div>
                    <div class="col-4">
                         <div>
-                            <h3 id="selected-painting">Fisherman's Warehouse</h3>
+                            <h3 id="selected-painting">And The Band Played On</h3>
                         </div>
                         <h6>Size</h6>
                         <select class="form-control form-control-sm">
@@ -70,6 +71,7 @@
                         </select>
                         <h6>Quantity</h6>
                         <select class="form-control" id="exampleFormControlSelect1">
+                            <option>0</option>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -85,45 +87,48 @@
                    </div>
                 </div>
                 <div class="row1">
-                  <a href="gallerypage.html">
+                  <button class="unselected" id="b1">
                     <img src="./images/theme/And The Band Played On.jpg" id="img1" class="rounded " alt="...">
-                  </a>
-                  <a href="gallerypage.html">
-                    <img src="./images/theme/Krehbiel.NoonRest.jpg" id="img2" class="rounded " alt="...">
-                  </a>
-                  <a href="gallerypage.html">
-                    <img src="./images/theme/Krehbiel.PackMulesatGreenDoor.jpg" id="img3" class="rounded " alt="...">
-                  </a>
-                  <a href="gallerypage.html">
-                    <img src="./images/theme/Krehbiel.SaddledUpandWaiting.jpg" id="img4" class="rounded " alt="...">
-                  </a>
-                  <a href="gallerypage.html">
-                    <img src="./images/theme/Krehbiel.SantaFe.1922.jpg" id="img5" class="rounded " alt="...">
-                  </a>
-                  <a href="gallerypage.html">
-                    <img src="./images/theme/Myriad Blues of Winter.jpg" id="img6" class="rounded " alt="...">
-                  </a>
-                  <a href="gallerypage.html">
-                    <img src="./images/theme/SO232423.jpg" id="img7" class="rounded " alt="...">
-                  </a>
-                  <a href="gallerypage.html">
-                    <img src="./images/theme/SO273441.jpg" id="img8" class="rounded" alt="...">
-                  </a>
-                  <a href="gallerypage.html">
-                    <img src="./images/theme/SO3644-OverTV.jpg" id="img9" class="rounded " alt="...">
-                  </a>
-                  <a href="gallerypage.html">
-                    <img src="./images/theme/Sunny Winter Day.jpg" id="img10" class="rounded " alt="...">
-                  </a>
-                  <a href="gallerypage.html">
-                    <img src="./images/theme/Wet Snow and Woods.jpg" id="img11" class="rounded " alt="...">
-                  </a>
-                  <a href="gallerypage.html">
-                    <img src="./images/theme/Winter in Mauve and Blues.jpg" id="img12" class="rounded" alt="...">
-                  </a>
-                  <a href="gallerypage.html">
-                    <img src="./images/theme/Melody of Colors.jpg" id="img13" class="rounded" alt="...">
-                  </a>
+                  </button>
+                  <button class="unselected" id="b2">
+                    <img src="./images/theme/Fisherman's Warehouse.jpg" id="img2" class="rounded " alt="...">
+                  </button>
+                  <button class="unselected" id="b3">
+                    <img src="./images/theme/Krehbiel.NoonRest.jpg" id="img3" class="rounded " alt="...">
+                  </button>
+                  <button class="unselected" id="b4">
+                    <img src="./images/theme/Krehbiel.PackMulesatGreenDoor.jpg" id="img4" class="rounded " alt="...">
+                  </button>
+                  <button class="unselected" id="b5">
+                    <img src="./images/theme/Krehbiel.SaddledUpandWaiting.jpg" id="img5" class="rounded " alt="...">
+                  </button>
+                  <button class="unselected" id="b6">
+                    <img src="./images/theme/Krehbiel.SantaFe.1922.jpg" id="img6" class="rounded " alt="...">
+                  </button>
+                  <button class="unselected" id="b7">
+                    <img src="./images/theme/Myriad Blues of Winter.jpg" id="img7" class="rounded " alt="...">
+                  </button>
+                  <button class="unselected" id="b8">
+                    <img src="./images/theme/SO232423.jpg" id="img8" class="rounded" alt="...">
+                  </button>
+                  <button class="unselected" id="b9">
+                    <img src="./images/theme/SO273441.jpg" id="img9" class="rounded " alt="...">
+                  </button>
+                  <button class="unselected" id="b10">
+                    <img src="./images/theme/SO3644-OverTV.jpg" id="img10" class="rounded " alt="...">
+                  </button>
+                  <button class="unselected" id="b11">
+                    <img src="./images/theme/Sunny Winter Day.jpg" id="img11" class="rounded " alt="...">
+                  </button>
+                  <button class="unselected" id="b12">
+                    <img src="./images/theme/Wet Snow and Woods.jpg" id="img12" class="rounded" alt="...">
+                  </button>
+                  <button class="unselected" id="b13">
+                    <img src="./images/theme/Winter in Mauve and Blues.jpg" id="img13" class="rounded" alt="...">
+                  </button>
+                  <button class="unselected" id="b14">
+                    <img src="./images/theme/Melody of Colors.jpg" id="img14" class="rounded" alt="...">
+                  </button>
                 </div>    
             </div>
 		</div>
@@ -136,9 +141,9 @@
 	</footer>
 
 
-<script src="./app.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="./app2.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
