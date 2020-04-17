@@ -167,3 +167,38 @@ b14.addEventListener('click',function(){
     console.log(selected)
 })
 
+
+
+const user1 = {
+    name: 1,
+    selcetd: 'painting1',
+    quanity: 1
+}
+
+
+
+
+const quanity = document.querySelector('#painting-quanity')
+quanity.addEventListener('input',function(e){
+    user1.quanity = e.target.value
+    console.log(user1.quanity)
+})
+
+const cart = document.querySelector('#adding-to-cart')
+cart.addEventListener('click',function(){
+    const userJSON = JSON.stringify(user1)
+    localStorage.setItem('user1',userJSON)
+    let shopping = document.querySelector('.shopping')
+    shopping.textContent = `Shopping-Cart(${user1.quanity})`    
+})
+
+userJSON1 = localStorage.getItem('user1')
+user = JSON.parse(userJSON1)
+
+renderQuantiy = `Shopping(${user.quanity})`
+console.log(renderQuantiy)
+
+shopCart = document.querySelector('.shopping')
+
+shopCart.textContent = `Shopping-Cart(${user.quanity})`
+
